@@ -72,7 +72,7 @@ export const statusConfig: Record<
   },
 };
 
-export function getDeadlineStatus(deadline: string | null) {
+export function getDeadlineStatus(deadline: string | null | undefined) {
   if (!deadline) {
     return {
       label: 'No deadline',
